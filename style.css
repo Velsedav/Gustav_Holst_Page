@@ -1,0 +1,30 @@
+.ParagraphPlanet{
+    text-align: center;
+}
+.h3Article{
+    text-align: center;
+}
+.StarWars{
+    background-color: #bc1e1c;
+}
+.mars{
+    background-color: #d4b375;
+}
+.venus{
+    background-color: #d2cfc9;
+}
+.mercure{
+    background-color: #707070;
+}
+.jupiter{
+    background-color: #967d61;
+}
+.saturn{
+    background-color: #5e593f;
+}
+.uranus{
+    background-color: #a4cacf;
+}
+.neptune{
+    background-color: #385ced;
+}

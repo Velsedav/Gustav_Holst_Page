@@ -4,42 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gustav HOLST - Accueil</title>
+    <link rel="stylesheet" href="style.css" />
     <!-- by Seb -->
   </head>
+  <header>
+    <nav>
+      <h1 id="top-page">Gustav HOLST</h1>
+
+      <!-- Sommaire -->
+      <div id="lien-intra-page">
+        <ul>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#planets">The planets</a></li>
+          <li><a href="#concerts">Quelques représentations</a></li>
+          <li><a href="#dates-concerts">Prochaines dates de concert</a></li>
+          <li><a href="#similar">Oeuvres similaires</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <body>
-    <h1 id="top-page">Gustav HOLST</h1>
+    <!-- Biographie -->
+    <section>
+      <div id="biographie">
+        <h2 id="bio">Bio</h2>
+        <p>
+          Gustav Theodore Holst (21 septembre 1874 à Cheltenham, Royaume-Uni —
+          25 mai 1934 à Londres), est un compositeur anglais. Bien que
+          principalement connu pour sa suite orchestrale
+          <strong>Les Planètes</strong> (1914-1917), il a composé un grand
+          nombre d’œuvres de genres divers. Son style de composition particulier
+          est le produit de plusieurs influences dont celle du renouveau des
+          chansons populaires anglaises au début du XXe siècle.
+        </p>
 
-    <!-- Sommaire -->
-    <div id="lien-intra-page">
-      <ul>
-        <li><a href="#bio">Bio</a></li>
-        <li><a href="#planets">The planets</a></li>
-        <li><a href="#concerts">Quelques représentations</a></li>
-        <li><a href="#dates-concerts">Prochaines dates de concert</a></li>
-        <li><a href="#similar">Oeuvres similaires</a></li>
-      </ul>
-    </div>
-
-    <div id="biographie">
-      <h2 id="bio">Bio</h2>
-      <p>
-        Gustav Theodore Holst (21 septembre 1874 à Cheltenham, Royaume-Uni — 25
-        mai 1934 à Londres), est un compositeur anglais. Bien que principalement
-        connu pour sa suite orchestrale
-        <strong>Les Planètes</strong> (1914-1917), il a composé un grand nombre
-        d’œuvres de genres divers. Son style de composition particulier est le
-        produit de plusieurs influences dont celle du renouveau des chansons
-        populaires anglaises au début du XXe siècle.
-      </p>
-
-      <a href="https://fr.wikipedia.org/wiki/Les_Plan%C3%A8tes" target="_blank">
-        <img
-          src="assets/Solar_System_HOLST.jpg"
-          alt="Image of Gulstav HOLST next to planets of the solar system"
-          width="300"
-        />
-      </a>
-
+        <a
+          href="https://fr.wikipedia.org/wiki/Les_Plan%C3%A8tes"
+          target="_blank"
+        >
+          <img
+            src="assets/Solar_System_HOLST.jpg"
+            alt="Image of Gulstav HOLST next to planets of the solar system"
+            width="300"
+          />
+        </a>
+      </div>
       <br />
 
       <p>
@@ -48,10 +57,11 @@
         d'associer les planètes à des caractères, de les personnifier. Ce fut
         pour lui une source d'inspiration nouvelle.
       </p>
-    </div>
+    </section>
 
+    <!-- The Planets, oeuvre majeure -->
     <article id="presentation-oeuvre-majeur">
-      <div>
+      <div class="StarWars">
         <h2 id="planets">The planets</h2>
         Sa symphonie <em>The Planets</em> comprend 7 pièces :
         <br />
@@ -72,56 +82,27 @@
             width="100"
           />
         </a>
-
-        <ul>
-          <li>
+      </div>
+        
+          <!-- Mars -->
+          <div class="mars">
             <img
               src="assets/Mars__Image.jpeg"
               alt="Image of Mars"
               width="100"
             />
-            Mars, celui qui apporte la guerre
+            <h3 class="h3Article">Mars, celui qui apporte la guerre</h3>
             <br />
+            <p class="ParagraphPlanet">
+              C'est une pièce puissante et intense qui représente la planète
+              Mars, souvent associée à la guerre et à la destruction. La musique
+              est marquée par des rythmes martiaux et des harmonies dissonantes,
+              créant une atmosphère de tension et de conflit. C'est une œuvre
+              impressionnante qui peut être appréciée même par ceux qui ne sont
+              pas familiers avec la musique classique, grâce à son caractère
+              dramatique et sa force émotionnelle.
+            </p>
 
-            <iframe
-              width="10%"
-              height="166"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/207309318&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-            <div
-              style="
-                font-size: 10px;
-                color: #cccccc;
-                line-break: anywhere;
-                word-break: normal;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                font-weight: 100;
-              "
-            >
-              <a
-                href="https://soundcloud.com/torontosymphony"
-                title="Toronto Symphony"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Toronto Symphony</a
-              >
-              ·
-              <a
-                href="https://soundcloud.com/torontosymphony/planets_mars"
-                title="Gustav Holst: The Planets: Mars, The Bringer of War / Oundjian • Toronto Symphony Orchestra"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Gustav Holst: The Planets: Mars, The Bringer of War / Oundjian
-                • Toronto Symphony Orchestra</a
-              >
-            </div>
             <figure>
               <figcaption>cliquez pour écouter:</figcaption>
               <audio
@@ -129,54 +110,23 @@
                 src="/assets/audio_assets/Gustav_Holst _Mars.mp3"
               ></audio>
             </figure>
-          </li>
-          <li>
+          </div>
+          <!-- Venus -->
+          <div class="venus">
             <img
               src="assets/Venus_Image.jpeg"
               alt="Image of Venus"
               width="100"
             />
-            Venus, celle qui apporte la paix
+            <h3 class="h3Article">Venus, celle qui apporte la paix</h3>
             <br />
-            <iframe
-              width="10%"
-              height="166"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208492621&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-            <div
-              style="
-                font-size: 10px;
-                color: #cccccc;
-                line-break: anywhere;
-                word-break: normal;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                font-weight: 100;
-              "
-            >
-              <a
-                href="https://soundcloud.com/torontosymphony"
-                title="Toronto Symphony"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Toronto Symphony</a
-              >
-              ·
-              <a
-                href="https://soundcloud.com/torontosymphony/planets_venus"
-                title="Gustav Holst: The Planets: Venus, The Bringer of Peace / Oundjian • Toronto Symphony Orchestra"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Gustav Holst: The Planets: Venus, The Bringer of Peace /
-                Oundjian • Toronto Symphony Orchestra</a
-              >
-            </div>
+            <p>
+              C'est une pièce douce et sereine qui représente la planète Vénus,
+              souvent associée à l'amour et à la beauté. La musique est calme et
+              apaisante, avec des mélodies fluides et des harmonies délicates,
+              créant une atmosphère de paix et de tranquillité.
+            </p>
+
             <figure>
               <figcaption>cliquez pour écouter:</figcaption>
               <audio
@@ -184,54 +134,26 @@
                 src="/assets/audio_assets/Gustav_Holst_Venus.mp3"
               ></audio>
             </figure>
-          </li>
-          <li>
+          </div>
+          <!-- Mercure -->
+          <div class="mercure">
             <img
               src="assets/Mercury_Image.jpeg"
               alt="image of Mercury"
               width="100"
             />
-            Mercure, le messager ailé
+            <h3 class="h3Article">Mercure, le messager ailé</h3>
             <br />
-            <iframe
-              width="10%"
-              height="166"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208931462&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-            <div
-              style="
-                font-size: 10px;
-                color: #cccccc;
-                line-break: anywhere;
-                word-break: normal;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                font-weight: 100;
-              "
-            >
-              <a
-                href="https://soundcloud.com/torontosymphony"
-                title="Toronto Symphony"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Toronto Symphony</a
-              >
-              ·
-              <a
-                href="https://soundcloud.com/torontosymphony/planets_mercury"
-                title="Gustav Holst: The Planets: Mercury, The Winged Messenger / Oundjian • Toronto Symphony Orchestra"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Gustav Holst: The Planets: Mercury, The Winged Messenger /
-                Oundjian • Toronto Symphony Orchestra</a
-              >
-            </div>
+            <p class="ParagraphPlanet">
+              C'est un mouvement vif et énergique qui représente la planète
+              Mercure, connue pour sa rapidité et son agilité. La musique est
+              rapide et remplie de mélodies vives et joueuses, capturant
+              l'essence de la nature rapide et dynamique de Mercure. C'est une
+              excellente introduction à la musique classique car elle est
+              excitante et facile à apprécier, même si vous n'êtes pas familier
+              avec ce genre.
+            </p>
+
             <figure>
               <figcaption>cliquez pour écouter:</figcaption>
               <audio
@@ -239,54 +161,24 @@
                 src="/assets/audio_assets/Gustav_Holst_Mercury.mp3"
               ></audio>
             </figure>
-          </li>
-          <li>
+          </div>
+          <!-- Jupiter -->
+          <div class="jupiter">
             <img
               src="assets/Jupiter_Image.jpeg"
               alt="Image of Jupiter"
               width="100"
             />
-            Jupiter, celui qui apporte la gaieté
+            <h3 class="h3Article">Jupiter, celui qui apporte la gaieté</h3>
             <br />
-            <iframe
-              width="10%"
-              height="166"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208931466&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-            <div
-              style="
-                font-size: 10px;
-                color: #cccccc;
-                line-break: anywhere;
-                word-break: normal;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                font-weight: 100;
-              "
-            >
-              <a
-                href="https://soundcloud.com/torontosymphony"
-                title="Toronto Symphony"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Toronto Symphony</a
-              >
-              ·
-              <a
-                href="https://soundcloud.com/torontosymphony/planets_jupiter"
-                title="Gustav Holst: The Planets: Jupiter, The Bringer of Jollity / Oundjian • Toronto Symphony Orchestra"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Gustav Holst: The Planets: Jupiter, The Bringer of Jollity /
-                Oundjian • Toronto Symphony Orchestra</a
-              >
-            </div>
+            <p class="ParagraphPlanet">
+              C'est une pièce joyeuse et optimiste qui représente la planète
+              Jupiter, souvent associée à la bonne humeur et à la jovialité. La
+              musique est énergique et festive, avec des mélodies entraînantes
+              et des harmonies riches, créant une atmosphère de célébration et
+              de bonheur.
+            </p>
+
             <figure>
               <figcaption>cliquez pour écouter:</figcaption>
               <audio
@@ -294,54 +186,24 @@
                 src="/assets/audio_assets/Gustav_Holst_Jupiter.mp3"
               ></audio>
             </figure>
-          </li>
-          <li>
+          </div>
+          <!-- Saturne -->
+          <div class="saturn">
             <img
               src="assets/Image_Saturn.jpeg"
               alt="Image of Saturn"
               width="100"
             />
-            Saturne, celui qui apporte la vieillesse
+            <h3 class="h3Article">Saturne, celui qui apporte la vieillesse</h3>
             <br />
-            <iframe
-              width="10%"
-              height="166"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208931472&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-            <div
-              style="
-                font-size: 10px;
-                color: #cccccc;
-                line-break: anywhere;
-                word-break: normal;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                font-weight: 100;
-              "
-            >
-              <a
-                href="https://soundcloud.com/torontosymphony"
-                title="Toronto Symphony"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Toronto Symphony</a
-              >
-              ·
-              <a
-                href="https://soundcloud.com/torontosymphony/planets_saturn"
-                title="Gustav Holst: The Planets: Saturn, The Bringer of Old Age / Oundjian • Toronto Symphony Orchestra"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Gustav Holst: The Planets: Saturn, The Bringer of Old Age /
-                Oundjian • Toronto Symphony Orchestra</a
-              >
-            </div>
+            <p class="ParagraphPlanet">
+              C'est une pièce mélancolique et réfléchie qui représente la
+              planète Saturne, souvent associée au temps qui passe et à la
+              sagesse de l'âge. La musique est lente et contemplative, avec des
+              mélodies sombres et des harmonies profondes, créant une atmosphère
+              de méditation et de nostalgie.
+            </p>
+
             <figure>
               <figcaption>cliquez pour écouter:</figcaption>
               <audio
@@ -349,54 +211,24 @@
                 src="/assets/audio_assets/GustavHolst_Saturn.mp3"
               ></audio>
             </figure>
-          </li>
-          <li>
+          </div>
+          <!-- Uranus -->
+          <div class="uranus">
             <img
               src="assets/Uranus_Image.jpeg"
               alt="Image of Uranus"
               width="100"
             />
-            Uranus, le magicien
+            <h3 class="h3Article">Uranus, le magicien</h3>
             <br />
-            <iframe
-              width="10%"
-              height="166"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208931481&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-            <div
-              style="
-                font-size: 10px;
-                color: #cccccc;
-                line-break: anywhere;
-                word-break: normal;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                font-weight: 100;
-              "
-            >
-              <a
-                href="https://soundcloud.com/torontosymphony"
-                title="Toronto Symphony"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Toronto Symphony</a
-              >
-              ·
-              <a
-                href="https://soundcloud.com/torontosymphony/planets_uranus"
-                title="Gustav Holst: The Planets: Uranus, The Magician / Oundjian • Toronto Symphony Orchestra"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Gustav Holst: The Planets: Uranus, The Magician / Oundjian •
-                Toronto Symphony Orchestra</a
-              >
-            </div>
+            <p class="ParagraphPlanet">
+              C'est une pièce mystérieuse et enchanteresse qui représente la
+              planète Uranus, souvent associée à l'imprévisible et au
+              surnaturel. La musique est variée et pleine de surprises, avec des
+              changements soudains de rythme et de tonalité, créant une
+              atmosphère de magie et de mystère.
+            </p>
+
             <figure>
               <figcaption>cliquez pour écouter:</figcaption>
               <audio
@@ -404,54 +236,26 @@
                 src="/assets/audio_assets/Gustav_Holst_Uranus.mp3"
               ></audio>
             </figure>
-          </li>
-          <li>
+          </div>
+          <!-- Neptune -->
+          <div class="neptune">
             <img
               src="assets/Neptune_Image.jpeg"
               alt="Image of Neptune"
               width="100"
             />
-            Neptune, le mystique
+            <h3 class="h3Article">Neptune, le mystique</h3>
             <br />
-            <iframe
-              width="10%"
-              height="166"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208931486&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-            <div
-              style="
-                font-size: 10px;
-                color: #cccccc;
-                line-break: anywhere;
-                word-break: normal;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                font-weight: 100;
-              "
-            >
-              <a
-                href="https://soundcloud.com/torontosymphony"
-                title="Toronto Symphony"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Toronto Symphony</a
-              >
-              ·
-              <a
-                href="https://soundcloud.com/torontosymphony/planets_neptune"
-                title="Gustav Holst: The Planets: Neptune, The Mystic / Oundjian • Toronto Symphony Orchestra"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none"
-                >Gustav Holst: The Planets: Neptune, The Mystic / Oundjian •
-                Toronto Symphony Orchestra</a
-              >
-            </div>
+            <p class="ParagraphPlanet">
+              C'est une pièce éthérée et mystérieuse qui représente la planète
+              Neptune, souvent associée à l'inconnu et à l'au-delà. La musique
+              est douce et flottante, avec des mélodies délicates et des
+              harmonies subtiles, créant une atmosphère de rêve et de mystère.
+              Une particularité de cette pièce est qu'elle se termine par un
+              chœur de voix féminines qui s'évanouissent lentement, ajoutant une
+              dimension surnaturelle et envoûtante.
+            </p>
+
             <figure>
               <figcaption>cliquez pour écouter:</figcaption>
               <audio
@@ -459,99 +263,113 @@
                 src="/assets/audio_assets/Gustav_Holst_Neptune.mp3"
               ></audio>
             </figure>
-          </li>
+          </div>
         </ul>
 
         <p>
           C'est le désespoir qui a poussé HOLST à composer cette oeuvre, à
           l'aube de la Première guerre mondiale.
         </p>
-      </div>
     </article>
 
-    <div id="liens-concerts-youtube">
-      <h2 id="concerts">Quelques représentations</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/HP5xhyPn58U?si=OiM8m1vvOqw1dHXw"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/fVrVjeEtDMU?si=u6ofJmO-mjDacKzm"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/8mJQliEacCI?si=fCrDkVWMbS4VpSAC"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/1UfTOsPMg5M?si=ri1oJVVmBaGpnZC2"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-    </div>
+    <!-- Embedded Youtube -->
+    <section>
+      <div id="liens-concerts-youtube">
+        <h2 id="concerts">Quelques représentations</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HP5xhyPn58U?si=OiM8m1vvOqw1dHXw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/fVrVjeEtDMU?si=u6ofJmO-mjDacKzm"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8mJQliEacCI?si=fCrDkVWMbS4VpSAC"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/1UfTOsPMg5M?si=ri1oJVVmBaGpnZC2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    
+    <footer>
+      <!-- Prochaines dates concert -->
+      <div>
+        <h2 id="dates-concerts">Prochaines dates de concert</h2>
+        <ul>
+          <li>
+            <a href="https://maps.app.goo.gl/xoMZzJoGz2fu5AwW8" target="_blank"
+              >ISTP salle 1-46, 28 Octobre 2024</a
+            >
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/xzVTfATX96mdeD3s7" target="_blank"
+              >Centre spatial Guyanais, 2 Janvier 2025</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/maps/space/mars/@-38.1886377,108.7026146,9709268m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              >Station Mars, 1 Novembre 2077</a
+            >
+          </li>
+        </ul>
+      </div>
 
-    <div id="prochaines-dates-de-concert">
-      <h2 id="dates-concerts">Prochaines dates de concert</h2>
-      <ul>
-        <li>
-          <a href="https://maps.app.goo.gl/xoMZzJoGz2fu5AwW8" target="_blank"
-            >ISTP salle 1-46, 28 Octobre 2024</a
-          >
-        </li>
-        <li>
-          <a href="https://maps.app.goo.gl/xzVTfATX96mdeD3s7" target="_blank"
-            >Centre spatial Guyanais, 2 Janvier 2025</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.google.com/maps/space/mars/@-38.1886377,108.7026146,9709268m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank"
-            >Station Mars, 1 Novembre 2077</a
-          >
-        </li>
-      </ul>
-    </div>
+      <!-- Titres similaires -->
+      <div>
+        <h3 id="similar">Oeuvres similaires</h3>
+        <ul>
+          <li>
+            <a href="bo-le-lavabo.html" target="_blank"
+              >Bo le lavabo par Vincent Lagaf'</a
+            >
+          </li>
+          <li>
+            <a href="mourning-palace.html" target="_blank"
+              >Mourning Palace par Dimmu Borgir</a
+            >
+          </li>
+          <li><a href="baby-shark.html" target="_blank">Baby shark</a></li>
+        </ul>
+      </div>
 
-    <div id="titres-similaires">
-      <h3 id="similar">Oeuvres similaires</h3>
-      <ul>
-        <li>
-          <a href="bo-le-lavabo.html" target="_blank"
-            >Bo le lavabo par Vincent Lagaf'</a
-          >
-        </li>
-        <li>
-          <a href="mourning-palace.html" target="_blank"
-            >Mourning Palace par Dimmu Borgir</a
-          >
-        </li>
-        <li><a href="baby-shark.html" target="_blank">Baby shark</a></li>
-      </ul>
-    </div>
+      <!-- Réseaux sociaux -->
+       <!-- MANQUES LOGOS -->
+      <div>
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+      </div>
+    </footer>
 
     <a href="#top-page">Retour au sommet</a>
   </body>
