@@ -1,13 +1,76 @@
+html {
+    font-size: 62.5%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  nav {
+    display: flex;
+    width: 80%;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+  body {
+    /* background-color: navy; */
+  }
+  .Ctnr{
+    width: 90%;
+    margin: auto;
+  }
+  .hero {
+    width: 100%;
+    position: relative;
+    z-index: -3;
+  }
+  .hero img{
+    object-fit: cover;
+    width: 100%;
+  }
 .ParagraphPlanet{
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 2rem;
+    z-index: 30;
 }
 .h3Article{
     text-align: center;
+    color: white;
+    margin-bottom: 0.8rem;
+    position: absolute;
+    padding-bottom: 1rem;
+    left: 50%;
+    top: 25%;
 }
-.StarWars{
-    background-color: #bc1e1c;
+.Sith {
+    color: #f82727;
+    text-shadow:
+    0 0 7px #AB1822,
+    0 0 12px #db0000,
+    0 0 21px #ff0000,
+    0 0 42px #ff0000,
+    0 0 82px #ff0000,
+    0 0 92px #ff0000,
+    0 0 102px #ff0000,
+    0 0 120px #ff0000;
 }
-.mars{
+/* .mars{
     background-color: #d4b375;
 }
 .venus{
@@ -27,4 +90,13 @@
 }
 .neptune{
     background-color: #385ced;
+} */
+
+/* Positions */
+.SndCld{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 15;
 }
+
